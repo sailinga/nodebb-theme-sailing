@@ -3,7 +3,7 @@
 <div class="row">
 	<!-- IF allowLocalLogin -->
 	<div class="<!-- IF alternate_logins -->col-md-6<!-- ELSE -->col-md-12<!-- ENDIF alternate_logins -->">
-		<h2>TEST MY THEME</h2>
+		<h2>Hữu Luân</h2>
 		<h2>TEST TIEP NHÉ</h2>
 		<div class="login-block">
 			<div class="alert alert-danger" id="login-error-notify" <!-- IF error -->style="display:block"<!-- ELSE -->style="display: none;"<!-- ENDIF error -->>

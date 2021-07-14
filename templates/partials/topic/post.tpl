@@ -49,7 +49,7 @@
 
 <br />
 
-<div class="content" component="post/content" itemprop="text">
+<div class="content g-content-news" component="post/content" itemprop="text">
 	{posts.content}
 </div>
 

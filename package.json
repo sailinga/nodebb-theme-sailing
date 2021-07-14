@@ -1,22 +1,50 @@
 {
-  "name": "nodebb-theme-sailing",
-  "version": "1.0.0",
-  "description": "Sailing theme",
-  "main": "library.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_from": "nodebb-theme-sailing",
+  "_id": "nodebb-theme-sailing@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-2GcTQ9HIk3h1dKgX3o37vkZ1lB4zDqiVdvGEQbWOHWwCmcikju9MlQZ+01cVEiJiG0T4WQu6eiTWQK3mauf8Pg==",
+  "_location": "/nodebb-theme-sailing",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nodebb-theme-sailing",
+    "name": "nodebb-theme-sailing",
+    "escapedName": "nodebb-theme-sailing",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nodebb-theme-sailing/-/nodebb-theme-sailing-1.0.2.tgz",
+  "_shasum": "f119e0589b4bc9b7b368ff571e7687c9fb48d277",
+  "_spec": "nodebb-theme-sailing",
+  "_where": "D:\\Gosu 2.0\\Server\\nodebb",
+  "author": {
+    "name": "congminh.le"
+  },
+  "bugs": {
+    "url": "https://github.com/sailinga/nodebb-theme-sailing/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Sailing theme",
+  "homepage": "https://github.com/sailinga/nodebb-theme-sailing#readme",
+  "keywords": [
+    "Sailing"
+  ],
+  "license": "ISC",
+  "main": "library.js",
+  "name": "nodebb-theme-sailing",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sailinga/nodebb-theme-sailing.git"
   },
-  "keywords": [
-    "Sailing"
-  ],
-  "author": "congminh.le",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sailinga/nodebb-theme-sailing/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/sailinga/nodebb-theme-sailing#readme"
+  "version": "1.0.2"
 }

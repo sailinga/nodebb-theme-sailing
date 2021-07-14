@@ -14,7 +14,7 @@
 				</a>
 				<!-- ENDIF brand:logo -->
 				<!-- IF config.showSiteTitle -->
-				<a href="<!-- IF title:url -->{title:url}<!-- ELSE -->{relative_path}/<!-- ENDIF title:url -->">
+				<a href="<!-- IF title:url -->{title:url}<!-- ELSE -->{relative_path}/<!-- ENDIF title:url -->" style="display: none;">
 					<h1 class="navbar-brand forum-title">{config.siteTitle}</h1>
 				</a>
 				<!-- ENDIF config.showSiteTitle -->
@@ -29,25 +29,10 @@
 				<!-- IF config.loggedIn -->
 
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right">
-					<li class="notifications dropdown text-center hidden-xs" component="notifications">
-						<a href="{relative_path}/notifications" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown" data-ajaxify="false" role="button">
-							<i component="notifications/icon" class="fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}"></i>
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="notif_dropdown">
-							<li>
-								<ul component="notifications/list" class="notification-list">
-									<li class="loading-text">
-										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
-									</li>
-								</ul>
-							</li>
-							<li class="notif-dropdown-link"><a href="#" class="mark-all-read">[[notifications:mark_all_read]]</a></li>
-							<li class="notif-dropdown-link"><a href="{relative_path}/notifications">[[notifications:see_all]]</a></li>
-						</ul>
-					</li>
-
+					
+				
 					<!-- IF !config.disableChat -->
-					<li class="chats dropdown">
+					<li class="chats dropdown g-chat">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="{relative_path}/user/{user.userslug}/chats" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown" data-ajaxify="false" role="button">
 							<i component="chat/icon" class="fa fa-comment-o fa-fw unread-count" data-content="{unreadCount.chat}"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
 						</a>
@@ -64,6 +49,24 @@
 						</ul>
 					</li>
 					<!-- ENDIF !config.disableChat -->
+
+					<li class="notifications dropdown text-center hidden-xs g-alert" component="notifications">
+						<a href="{relative_path}/notifications" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown" data-ajaxify="false" role="button">
+							<i component="notifications/icon" class="fa fa-fw fa-bell-o unread-count " data-content="{unreadCount.notification}"></i>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="notif_dropdown">
+							
+							<li>
+								<ul component="notifications/list" class="notification-list">
+									<li class="loading-text">
+										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
+									</li>
+								</ul>
+							</li>
+							<li class="notif-dropdown-link"><a href="#" class="mark-all-read">[[notifications:mark_all_read]]</a></li>
+							<li class="notif-dropdown-link"><a href="{relative_path}/notifications">[[notifications:see_all]]</a></li>
+						</ul>
+					</li>
 
 					<li id="user_label" class="dropdown">
 						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">

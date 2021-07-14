@@ -2,15 +2,17 @@
 	<!-- IMPORT partials/account/header.tpl -->
 	<!-- IF sso.length --><div><!-- ENDIF sso.length -->
 		<div class="row">
-			<div class="col-md-2 col-sm-4">
-				<div class="account-picture-block text-center">
+			<div class="col-md-3 col-sm-4">
+				<div class="account-picture-block text-center g-edit-account">
 					<div class="row">
-						<div class="col-xs-12 hidden-xs">
-							<!-- IF picture -->
-							<img id="user-current-picture" class="avatar avatar-xl avatar-rounded" src="{picture}" />
-							<!-- ELSE -->
-							<div class="avatar avatar-xl avatar-rounded" style="background-color: {icon:bgColor};">{icon:text}</div>
-							<!-- ENDIF picture -->
+						<div class="col-xs-12 hidden-xs ">
+							<div class="g-avatar">
+								<!-- IF picture -->
+								<img id="user-current-picture" class="avatar avatar-xl avatar-rounded" src="{picture}" />
+								<!-- ELSE -->
+								<div class="avatar avatar-xl avatar-rounded" style="background-color: {icon:bgColor};">{icon:text}</div>
+								<!-- ENDIF picture -->
+							</div>
 						</div>
 					</div>
 					<ul class="list-group">
@@ -50,19 +52,19 @@
 
 			<div class="<!-- IF !sso.length -->col-md-9 col-sm-8<!-- ELSE -->col-md-5 col-sm-4<!-- ENDIF !sso.length -->">
 				<div>
-					<form class='form-horizontal'>
+					<form class='form-horizontal g-edit-user-form'>
 
 						<div class="control-group">
 							<label class="control-label" for="inputFullname">[[user:fullname]]</label>
 							<div class="controls">
-								<input class="form-control" type="text" id="inputFullname" placeholder="[[user:fullname]]" value="{fullname}">
+								<input class="form-control" type="text" id="inputFullname" placeholder="[[user:fullname]]"  value="{fullname}"> 
 							</div>
 						</div>
 						<!-- IF allowWebsite -->
 						<div class="control-group">
 							<label class="control-label" for="inputWebsite">[[user:website]]</label>
 							<div class="controls">
-								<input class="form-control" type="text" id="inputWebsite" placeholder="http://..." value="{website}">
+								<input class="form-control" type="text" id="inputWebsite"  placeholder="http://..." value="{website}">
 							</div>
 						</div>
 						<!-- ENDIF allowWebsite -->

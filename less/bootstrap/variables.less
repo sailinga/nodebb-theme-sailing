@@ -7,6 +7,26 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
+@font-face {
+    font-family: 'svnhelves';
+    src: url('./fonts/svnhelves.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'svnhelvesbold';
+    src: url('./fonts/svnhelvesbold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'myriadprore';
+    src: url('./fonts/myriadprore.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
 @gray-dark:              lighten(@gray-base, 20%);   // #333
@@ -26,7 +46,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               #f0f3f5;
 //** Global text color on `<body>`.
 @text-color:            @gray-dark;
 
@@ -81,6 +101,7 @@
 @icon-font-name:          "glyphicons-halflings-regular";
 //** Element ID within SVG icon file.
 @icon-font-svg-id:        "glyphicons_halflingsregular";
+
 
 
 //== Components
