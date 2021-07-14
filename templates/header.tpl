@@ -5,14 +5,21 @@
 	{{{each metaTags}}}{function.buildMetaTag}{{{end}}}
 	<link rel="stylesheet" type="text/css" href="{relative_path}/assets/client<!-- IF bootswatchSkin -->-{bootswatchSkin}<!-- END -->.css?{config.cache-buster}" />
 	{{{each linkTags}}}{function.buildLinkTag}{{{end}}}
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 		var config = JSON.parse('{{configJSON}}');
 		var app = {
 			user: JSON.parse('{{userJSON}}')
 		};
 	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.1/jquery.timeago.min.js"></script>
 
+	<script>
+	window.path_to_nodebb = '{relative_path}';
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 	<!-- IF useCustomHTML -->
 	{{customHTML}}
 	<!-- END -->

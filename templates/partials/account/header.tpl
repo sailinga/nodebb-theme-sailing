@@ -1,4 +1,6 @@
+<div style="display: none;">
 <!-- IMPORT partials/breadcrumbs.tpl -->
+</div>
 
 <div data-widget-area="header">
 	{{{each widgets.header}}}
@@ -6,7 +8,7 @@
 	{{{end}}}
 </div>
 
-<div class="cover" component="account/cover" style="background-image: url({cover:url}); background-position: {cover:position};">
+<div class="cover" component="account/cover" style="background-image: url({cover:url}); background-position: {cover:position}; display: none;">
 	<div class="avatar-wrapper" data-uid="{uid}">
 		<!-- IF picture -->
 		<img src="{picture}" class="avatar avatar-xl avatar-rounded" />
@@ -17,7 +19,7 @@
 
 		<!-- IF loggedIn -->
 		<!-- IF !isSelf -->
-		<button class="btn-morph fab <!-- IF isFollowing -->heart<!-- ELSE -->plus<!-- ENDIF isFollowing -->" title="<!-- IF isFollowing -->[[global:unfollow]]<!-- ELSE -->[[global:follow]]<!-- ENDIF isFollowing -->">
+		<button style="display: none;" class="btn-morph fab <!-- IF isFollowing -->heart<!-- ELSE -->plus<!-- ENDIF isFollowing -->" title="<!-- IF isFollowing -->[[global:unfollow]]<!-- ELSE -->[[global:follow]]<!-- ENDIF isFollowing -->">
 			<span>
 				<span class="s1"></span>
 				<span class="s2"></span>
@@ -29,7 +31,6 @@
 	</div>
 
 	<div class="container">
-		<!-- IMPORT partials/account/menu.tpl -->
 
 		<!-- IF allowCoverPicture -->
 		<!-- IF canEdit -->

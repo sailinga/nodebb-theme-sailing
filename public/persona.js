@@ -443,7 +443,7 @@ $(document).ready(function () {
 
 				$(this).toggleClass('plus').toggleClass('heart');
 				$(this).translateAttr('title', type === 'follow' ? '[[global:unfollow]]' : '[[global:follow]]');
-
+				
 				if ($(this).find('b.drop').length === 0) {
 					$(this).prepend('<b class="drop"></b>');
 				}
@@ -453,6 +453,7 @@ $(document).ready(function () {
 					y = ev.pageY - drop.height() / 2 - $(this).offset().top;
 
 				drop.css({ top: y + 'px', left: x + 'px' }).addClass('animate');
+				$(this).find('a').text(type === 'follow' ? 'Hủy' : 'Theo dõi');			
 			});
 		});
 	}

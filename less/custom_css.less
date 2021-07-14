@@ -1,0 +1,466 @@
+
+.popular-tags {
+    &>.inline-block {
+        width: 100%;
+        margin-top: -8px;
+        display: inline-block;
+        zoom: 1;
+    }
+    &>span {
+        margin-bottom: 10px;
+    }
+    .tag-item {
+        float: left;
+        width: 80%;
+        background-color: #4fc3f7;
+        color: white;
+        font-weight: 500;
+        padding-left: 10px;
+        position: relative;
+        padding: 5px 5px 4px 10px;
+        font-size: 85%;
+        text-transform: uppercase;
+        white-space: nowrap;
+        .popular-tags-bar {
+            background-color: rgba(0,0,0,0.07);
+            width: 0px;
+            height: 32px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            -webkit-transition: width 750ms ease-out;
+            -moz-transition: width 750ms ease-out;
+            -ms-transition: width 750ms ease-out;
+            -o-transition: width 750ms ease-out;
+            transition: width 750ms ease-out;
+        }
+        .tag-topic-count {
+            float: left;
+            width: 20%;
+            margin-top: 0px;
+            background-color: #cbebf7;
+            color: #777;
+            padding: 4px 4px 5px 4px;
+            border: 0;
+            text-align: center;
+        }
+    }
+}
+
+
+.header {
+    .forum-logo {
+        margin-top: 7px;
+    }
+    #user_dropdown {
+        padding: 4px;
+        .user-icon, img, span {
+            width: 55px;
+            height: 55px;
+        }
+        .avatar-md{
+            font-size: 23px;
+            line-height: 53px;
+        }
+    }
+}
+.btn-group.account-fab.g-account-fab {
+    position: fixed;
+    top: 15%;
+    bottom: inherit;
+    z-index: 2;
+}
+#logged-in-menu {
+    li a {
+        padding: 10px;
+    }
+    .g-edit-user {
+        .btn-group {
+            position: relative;
+            bottom: -11px;
+            left: -5px;
+            .fab {
+                background: url(/assets/images/customer/icon-edit-user.png) no-repeat left center;
+                box-shadow: none;
+                background-color: transparent;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                line-height: inherit;
+                height: 37px;
+                width: 38px;
+                display: block;
+                i {
+                    display: none;
+                }
+            }
+        }
+    }
+    .g-alert,.g-chat {
+        a i {
+            background: url(/assets/images/customer/icon-alert-user.png) no-repeat left center;
+            height: 38px;
+            width: 38px;
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .g-chat {
+        a i {
+            background: url(/assets/images/customer/icon-chat-user.png) no-repeat left center;
+        }
+    }
+}
+.account {
+    margin-top: 17px;
+    .avatar-wrapper {
+        .g-avatar {
+            text-align: center;
+            position: relative;
+            width: 150px;
+            margin: auto;
+            &::before {
+                content: '';
+                width: 128px;
+                height: 128px;
+                position: absolute;
+                left: calc(50% - 57px);
+                top: calc(50% - 67px);
+                background-color: #c5cfd1;
+                border-radius: 50%;
+                z-index: -1;
+            }
+            .g-edit-user {
+                background: url(/assets/images/customer/icon-edit.png) no-repeat left center;
+                width: 31px;
+                height: 31px;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: none;
+            }
+        }
+        
+        .g-tuong_anh {
+            margin: 45px 0 60px;
+            a {
+                background: url(/assets/images/customer/icon-home.png) no-repeat left center;
+                width: 29px;
+                height: 26px;
+                font-size: 15.87px;
+                color: #362f2d;
+                font-family: 'svnhelvesbold';
+                padding-left: 32px;
+                margin: 0 10px;
+                &:last-child {
+                    background: url(/assets/images/customer/icon-thum.png) no-repeat left center;
+                }
+            }
+        }
+    }
+    .profile {
+        text-align: left;
+        .fullname{
+            text-align: left;
+            // font-family: 'Roboto', sans-serif;
+            font-family: 'svnhelvesbold';
+            color: #362f2d;
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+        .account-stats {
+            text-align: left;
+            font-size: 19px;
+            line-height: 25px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            .stat {
+                margin-bottom: 0;
+                div {
+                    margin-right: 15px;
+                    a, span{
+                        font-family: 'svnhelves';
+                        color: #848484;
+                        font-size: 18px;
+                        text-transform: inherit;
+                    }
+                }
+            }
+        }
+        .aboutme p{
+            text-align: left;
+            max-width: 100%;
+        }
+    }
+    .g-canhan {
+        p {
+            color: #362f2d;
+            &:not(:first-child){
+                font-size: 15px;
+                font-family: 'svnhelves';
+            }
+            span {
+                float: right;
+            }
+        }
+    }
+    .g-creat-post a{
+        width: 100%;
+        height: 47px;
+        font-size: 15px;
+        color: #fff;
+        background-color: #004eff;
+        display: block;
+        text-align: center;
+        line-height: 47px;
+        text-transform: uppercase;
+        font-family: 'svnhelvesbold';
+        margin-bottom: 22px;
+    }
+    .g-block_post {
+        background-color: #fff;
+        padding: 10px;
+    }
+    .g-group {
+        .panel-default {
+            width: auto;
+            border: transparent;
+            background-color: transparent;
+            box-shadow: none;
+            .panel-heading {
+                display: inline-block;
+                padding: 0;
+                border: none;
+                img {
+                    width: 113px;
+                    height: 76px;
+                    border-radius: 10px;
+                    display: inline-block;
+                }
+            }
+            .panel-title {
+                height: 100%;
+                display: inline-flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                color: #362f2d;
+                font-family: 'svnhelvesbold';
+                small {
+                    display: block;
+                    margin-top: 5px;
+                    font-family: 'svnhelves';
+                    font-size: 15px;
+                }
+            }
+            .panel-body {
+                display: inline-block;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+    .g-ad {
+        margin-top: 60px;
+    }
+    .g-title {
+        font-family: 'svnhelvesbold';
+        font-size: 18px;
+        color: #362f2d;
+        margin-top: 35px;
+    }
+    .g-three-bnt {
+        text-align: left;
+        margin-bottom: 45px;
+        ul {
+            li {
+                display: inline-block;
+                width: calc(100%/3 - 4px);
+                max-width: 165px;
+                height: 40px;
+                border-radius: inherit;
+                box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+                overflow: auto;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    line-height: 40px;
+                    text-align: center;
+                    background-color: #2f3a56;
+                    color: #fbfcfe;
+                    border-radius: 5px;
+                    display: block;
+                    font-size: 18px;
+                    font-family: 'myriadprore';
+                    text-decoration: inherit;
+                    &:hover {
+                        background-color: #3258af;
+                    }
+                }
+                &.btn-morph {
+                    .drop {
+                        display: none;
+                    }
+                    &.heart a {
+                        background-color: #3258af;
+                    }
+                }
+            }
+        }
+    }
+}
+.g-posts-list {
+    .posts-list-item {
+        .topic-title, strong {
+            font-family: 'svnhelvesbold';
+            font-size: 15px;
+            color: #362f2d;
+        }
+        .post-body {
+            border-right: none;
+        }
+        .g-content {
+            p {
+                font-family: 'myriadprore';
+                font-size: 15px;
+                color: #362f2d;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+.g-edit-account {
+    .g-avatar {
+        text-align: center;
+        position: relative;
+        width: 150px;
+        margin: auto;
+        &::before {
+            content: '';
+            width: 128px;
+            height: 128px;
+            position: absolute;
+            left: calc(50% - 57px);
+            top: calc(50% - 67px);
+            background-color: #c5cfd1;
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+    .list-group {
+        a {
+            background-color: transparent;
+            font-size: 18px;
+            color: #362f2d;
+            font-family: 'svnhelvesbold';
+            padding-left: 0;
+            padding-right: 0;
+            border: transparent;
+            text-align: left;
+            padding-left: 37px;
+            background: url(/assets/images/customer/icon-edit-avata.png) no-repeat left center;
+            &:nth-child(2) {
+                background: url(/assets/images/customer/icon-edit-login.png) no-repeat left center;
+            }
+            &:nth-child(3) {
+                background: url(/assets/images/customer/icon-edit-email.png) no-repeat left center;
+            }
+            &:nth-child(4) {
+                background: url(/assets/images/customer/icon-edit-pass.png) no-repeat left center;
+            }
+        }
+    }
+    #deleteAccountBtn {
+        background-color: #c92525;
+        border-color: #d43f3a;
+        border-radius: 6px;
+        font-family: svnhelvesbold;
+    }
+}
+.g-edit-user-form {
+    .control-group {
+        label {
+            font-family: 'svnhelves';
+            font-size: 18px;
+        }
+        input, textarea,select  {
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            transition: none;
+            padding: 0;
+            border-bottom: 1px solid #c5c7c9;
+        }
+    }
+    .form-actions {
+        a {
+            float: right;
+            background-color: #3258af;
+            border-radius: 6px;
+            font-size: 17px;
+            font-family: 'svnhelvesbold';
+        }
+    }
+    
+}
+.g-content-news {
+    p {
+        font-family: myriadprore;
+        font-size: 15px;
+        color: #362f2d;
+        strong {
+            font-family: svnhelvesbold;
+        }
+    }
+}
+.g-footer, .g-f-bottom {
+   
+    .g-row {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        @media (max-width: 991px) {
+            display: block;
+        }
+        ul {
+            display: inline-block;
+            padding: 0;
+            float: left;
+            li {
+                display: block;
+                a {
+                    color: #000;
+                    font-size: 18px;
+                    font-family: 'svnhelves';
+                    display: block;
+                    text-align: left;
+                    line-height: 28px;
+                }
+            }
+        }
+        .code_qr {
+            div {
+                display: inline-block;
+                float: left;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.g-footer {
+    background-color: #fff;
+}
+.g-f-bottom {
+    margin-top: 15px;
+    .g-social {
+        ul {
+            li{
+                display: inline-block;
+            }
+        }
+    }
+}
