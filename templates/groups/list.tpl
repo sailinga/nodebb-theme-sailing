@@ -4,7 +4,8 @@
 	{{widgets.header.html}}
 	{{{end}}}
 </div>
-<div class="groups list">
+<div class="groups list g-groups
+">
 	<div class="row">
 		<div class="col-lg-4">
 			<!-- IF allowGroupCreation -->

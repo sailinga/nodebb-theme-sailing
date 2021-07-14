@@ -40,10 +40,10 @@
 			</div>
 			<div class="g-canhan">
 				<p class="g-title">Thành tích cá nhân</p>
-				<p>Hoạt động cá nhân: <span class="timeago" title="{joindateISO}"></span> </p>
-				<p>Tham gia được <span class="timeago" title="{lastonlineISO}"></span> </p>
+				<p>Tham gia được: <span class="timeago" title="{joindateISO}"></span> </p>
+				<p>Hoạt động cá nhân: <span class="timeago" title="{lastonlineISO}"></span> </p>
 				<p>Số bài viết <span>{counts.posts}</span> </p>
-				<p>Điểm uy tín <span>{reputation}</span> </p>
+				<p>Điểm uy tín: <span>{reputation}</span> </p>
 			</div>
 
 			<div class="g-congdong">

@@ -46,9 +46,32 @@
         }
     }
 }
-
+.g-breadcrumb {
+    margin-top: 37px;
+    margin-bottom: 57px;
+    li {
+        line-height: 19px;
+        meta[content = '0'] ~ a{
+            span {
+                text-indent: 9999px;
+                background: url(/assets/images/customer/icon-home-blue.png) no-repeat left center;
+                width: 21px;
+                height: 19px;
+                display: block;
+            }
+        }
+        span {
+            color: #848484;
+            font-family: 'svnhelvesbold';
+        }
+    }
+    >li+li:before {
+        content: url(/assets/images/customer/icon-arrow.png) !important;
+    }
+}
 
 .header {
+    box-shadow: 1px 1px 5px #dfdfdf;
     .forum-logo {
         margin-top: 7px;
     }
@@ -62,6 +85,12 @@
             font-size: 23px;
             line-height: 53px;
         }
+    }
+    #main-nav {
+        >li>a {
+            padding-top: 21px;
+            padding-bottom: 22px;
+        } 
     }
 }
 .btn-group.account-fab.g-account-fab {
@@ -164,7 +193,6 @@
         text-align: left;
         .fullname{
             text-align: left;
-            // font-family: 'Roboto', sans-serif;
             font-family: 'svnhelvesbold';
             color: #362f2d;
             font-size: 30px;
@@ -192,6 +220,9 @@
         .aboutme p{
             text-align: left;
             max-width: 100%;
+            font-size: 20px;
+            font-family: 'svnhelves';
+            color: #7a7a7a;
         }
     }
     .g-canhan {
@@ -412,6 +443,71 @@
         color: #362f2d;
         strong {
             font-family: svnhelvesbold;
+        }
+    }
+}
+.g-groups {
+   
+    button {
+        &.btn {
+            background-color: #3258af;
+            border-radius: 6px;
+            font-size: 17px;
+            font-family: 'svnhelvesbold';
+            @media (max-width: 991px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    select{
+        border: none;
+        border-radius: 30px !important;
+        padding-left: 45px;
+    }
+    .input-group {
+        display: block;
+        input{
+            border: none;
+            border-radius: 30px !important;
+            padding-left: 45px;
+        }
+        .input-group-addon:last-child {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            z-index: 2;
+            border: none;
+            background-color: transparent;
+        }
+    }
+    .panel {
+        background-color: transparent;
+        border: none;
+        box-shadow: 0 1px 9px rgb(0 0 0 / 5%);
+        .panel-title {
+            font-family: 'svnhelvesbold';
+            font-size: 25px;
+            color: #362f2d;
+            margin-bottom: 17px;
+        }
+        .list-cover {
+            padding: 0;
+            background-color: #fff;
+            height: 202px;
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                object-fit: cover;
+                top: 50%;
+                left: 50%;
+            }
+        }
+        .panel-body {
+            background-color: #fff;
+            border-radius: 0 5px 5px 0;
         }
     }
 }
