@@ -92,8 +92,55 @@
 		{{{each widgets.sidebar}}}
 		{{widgets.sidebar.html}}
 		{{{end}}}
-
-		<!-- IMPORT partials/congdong.tpl -->
+		<div class="g-question">
+			<p class="g-title">Bạn hôm nay thế nào?</p>
+			<div class="g-qu-content">
+				<a href="/user/huuluan1988">
+					<img class="avatar  avatar-sm2x avatar-rounded" alt="huuluan1988" title="" data-uid="1" loading="lazy" component="user/picture" src="/assets/uploads/profile/1-profileavatar-1626083308586.png" style="" data-original-title="huuluan1988">
+					<span>Hi trungle1979!</span>
+				</a>
+				<div>
+					<p>Điểm reward: <strong>0đ</strong></p>
+					<p>Tuổi game6: <strong>13 ngày</strong></p>
+				</div>
+			</div>
+		</div>
+		<div class="g-congdong">
+			<p class="g-title">Cộng đồng đã tham gia</p>
+			<div class="g-group">
+				
+				<div class="" component="groups/summary" data-slug="cộng-đồng-game-aoe2">
+					<div class="panel panel-default">
+						<a href="/groups/cộng-đồng-game-aoe2" class="panel-heading list-cover">
+							<img src="/assets/uploads/files/groupcoverthumb-cộng-đồng-game-aoe2.png " alt="">
+						</a>
+						<div class="panel-body">
+							<h3 class="panel-title">Cộng Đồng Game AoE2 <small>2</small></h3>
+							<ul class="members">
+								
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="" component="groups/summary" data-slug="administrators">
+					<div class="panel panel-default">
+						<a href="/groups/administrators" class="panel-heading list-cover">
+							<img src="/assets/uploads/files/groupcoverthumb-administrators.jpeg " alt="">
+						</a>
+						<div class="panel-body">
+							<h3 class="panel-title">administrators <small>1</small></h3>
+							<ul class="members">
+								
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
 	</div>
 </div>
 

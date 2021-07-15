@@ -103,7 +103,7 @@
 					<div class="stat">
 						<div>
 							<a class="human-readable-number" title="{counts.followers}" href="{config.relative_path}/user/{userslug}/followers">{counts.followers}</a>
-							<span class="stat-label">[[user:followers]]</span>
+							<span class="stat-label">followers</span> <!--  [[user:followers]] -->
 						</div>
 						
 					</div>
@@ -111,7 +111,7 @@
 					<div class="stat">
 						<div>
 							<a class="human-readable-number" title="{counts.following}" href="{config.relative_path}/user/{userslug}/following">{counts.following}</a>
-							<span class="stat-label">[[user:following]]</span>
+							<span class="stat-label">followings </span> <!--  [[user:following]] -->
 						</div>
 						
 					</div>

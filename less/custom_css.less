@@ -183,8 +183,10 @@
                 font-family: 'svnhelvesbold';
                 padding-left: 32px;
                 margin: 0 10px;
+                background-size: contain;
                 &:last-child {
                     background: url(/assets/images/customer/icon-thum.png) no-repeat left center;
+                    background-size: contain;
                 }
             }
         }
@@ -217,12 +219,14 @@
                 }
             }
         }
-        .aboutme p{
+        .aboutme{
             text-align: left;
-            max-width: 100%;
             font-size: 20px;
             font-family: 'svnhelves';
             color: #7a7a7a;
+            p {
+                max-width: 100%;
+            }
         }
     }
     .g-canhan {
@@ -257,13 +261,6 @@
     .g-ad {
         margin-top: 60px;
     }
-    .g-title {
-        font-family: 'svnhelvesbold';
-        font-size: 18px;
-        color: #362f2d;
-        margin-top: 35px;
-    }
-    
     .g-three-bnt {
         text-align: left;
         margin-bottom: 45px;
@@ -307,6 +304,12 @@
 .g-ad-lg {
     text-align: center;
 }
+.g-title {
+    font-family: 'svnhelvesbold';
+    font-size: 18px;
+    color: #362f2d;
+    margin-top: 35px;
+}
 .g-congdong {
     .g-group {
         .panel-default {
@@ -333,6 +336,7 @@
                 flex-direction: column;
                 color: #362f2d;
                 font-family: 'svnhelvesbold';
+                line-height: 23px;
                 small {
                     display: block;
                     margin-top: 5px;
@@ -346,6 +350,49 @@
                 padding-bottom: 0;
                 float: right;
                 width: calc(100% - 115px);
+            }
+        }
+    }
+}
+.g-question {
+    .g-qu-content {
+        background-color: #fff;
+        padding: 30px 0 70px 18px;
+        a {
+            img, span {
+                display: inline;
+            }
+            span {
+                font-family: 'svnhelvesbold';
+                font-size: 18px;
+                color: #362f2d;
+            }
+        }
+        div {
+            margin-left: 62px;
+            margin-top: 12px;
+            position: relative;
+            &::before {
+                content: '';
+                width: 2px;
+                height: 40px;
+                background-color: #f0f3f5;
+                position: absolute;
+                top: 10px;
+                left: -37px;
+                display: block;
+            }
+            p {
+                font-size: 15px;
+                color: #848484;
+                font-family: 'svnhelves';
+                margin-left: 10px;
+                margin-bottom: 9px;
+                strong {
+                    font-size: 15px;
+                    color: #362f2d;
+                    font-family: 'svnhelvesbold';
+                }
             }
         }
     }
