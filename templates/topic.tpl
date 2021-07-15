@@ -92,6 +92,8 @@
 		{{{each widgets.sidebar}}}
 		{{widgets.sidebar.html}}
 		{{{end}}}
+
+		<!-- IMPORT partials/congdong.tpl -->
 	</div>
 </div>
 

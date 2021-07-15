@@ -46,7 +46,7 @@
 
 		<small data-editor="{posts.editor.userslug}" component="post/editor" class="hidden">[[global:last_edited_by, {posts.editor.username}]] <span class="timeago" title="{posts.editedISO}"></span></small>
 
-		<span class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
+		<span class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" style="display: none;">
 			<a class="permalink" href="{config.relative_path}/post/{posts.pid}"><span class="timeago" title="{posts.timestampISO}"></span></a>
 		</span>
 	</small>

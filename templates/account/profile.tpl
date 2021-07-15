@@ -13,7 +13,7 @@
 							<!-- ELSE -->
 							<div class="avatar avatar-xl avatar-rounded" style="background-color: {icon:bgColor};" title="{username}">{icon:text}</div>
 							<!-- ENDIF picture -->
-							<i component="user/status" class="fa fa-circle status {status}" title="[[global:{status}]]"></i>
+							<i component="user/status" class="fa fa-circle status {status}" title="[[global:{status}]]" style="display: none;"></i>
 
 							<!-- IF showHidden -->
 							<a id="changePictureBtn" href="{config.relative_path}/user/{userslug}/edit" class="g-edit-user list-group-item"></a>
@@ -46,33 +46,8 @@
 				<p>Điểm uy tín: <span>{reputation}</span> </p>
 			</div>
 
-			<div class="g-congdong">
-				<p class="g-title">Cộng đồng đã tham gia</p>
-				<div class="g-group">
-					{{{each groups}}}
-					<div class="" component="groups/summary" data-slug="{groups.slug}">
-						<div class="panel panel-default">
-							<a href="{config.relative_path}/groups/{groups.slug}" class="panel-heading list-cover">
-								<img src="<!-- IF groups.cover:thumb:url -->{groups.cover:thumb:url} <!-- ENDIF groups.cover:thumb:url -->" alt="">
-							</a>
-							<div class="panel-body">
-								<h3 class="panel-title">{groups.displayName} <small>{groups.memberCount}</small></h3>
-								<ul class="members">
-									{{{each groups.members}}} thành viên
-									<li>
-										<a href="{config.relative_path}/user/{groups.members.userslug}">{buildAvatar(groups.members, "sm", true)}</a>
-									</li>
-									{{{end}}}
-									<!-- IF groups.truncated -->
-									<li class="truncated"><i class="fa fa-ellipsis-h"></i></li>
-									<!-- ENDIF groups.truncated -->
-								</ul>
-							</div>
-						</div>
-					</div>
-					{{{end}}}
-				</div>
-			</div>
+			<!-- IMPORT partials/congdong.tpl -->
+
 			<div class="g-ad">
 				<p><img src="/assets/images/customer/quangcao.jpg" alt=""></p>
 			</div>
