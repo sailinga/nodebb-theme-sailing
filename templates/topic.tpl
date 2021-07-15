@@ -141,6 +141,10 @@
 				
 			</div>
 		</div>
+		<div class="g-bxh">
+			<p class="g-title">BXH game Việt</p>
+			<div class="g-block-bxh"></div>
+		</div>
 	</div>
 </div>
 
