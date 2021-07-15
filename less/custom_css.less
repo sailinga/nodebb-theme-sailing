@@ -304,6 +304,9 @@
 .g-ad-lg {
     text-align: center;
 }
+.g-ad-bv img{
+    width: 100%;
+}
 .g-title {
     font-family: 'svnhelvesbold';
     font-size: 18px;
@@ -362,6 +365,9 @@
             img, span {
                 display: inline;
             }
+            img {
+                border: 50%;
+            }
             span {
                 font-family: 'svnhelvesbold';
                 font-size: 18px;
@@ -401,6 +407,69 @@
     .g-block-bxh {
         background-color: #fff;
         min-height: 414px;
+    }
+}
+.g-users-hot {
+    .g-users {
+        background-color: #fff;
+        margin-bottom: 30px;
+        ul {
+            margin: 0;
+            padding: 5px 0 70px 5px;
+            li {
+                list-style-type: none;
+                display: block;
+                clear: both;
+                a {
+                    > p, > div {
+                        display: block;
+                        float: left;
+                    }
+                    > p {
+                        margin-right: 5px;
+                        img {
+                            width: 72px;
+                            height: 72px;
+                            border-radius: 50%;
+                        }
+                    }
+                    > div {
+                        margin-top: 8px;
+                        p {
+                            display: block;
+                            margin-bottom: 3px;
+                            span {
+                                display: inline-block;
+                                width: 70px;
+                                height: 25px;
+                                line-height: 25px;
+                                border-radius: 17px;
+                                background-color: #406d96;
+                                text-align: center;
+                                font-size: 15px;
+                                color: #fff;
+                                font-family: 'svnhelves';
+                            }
+                            i {
+                                background: url(/assets/images/customer/icon-vip.png) no-repeat left center;
+                                width: 50px;
+                                height: 22px;
+                                display: inline-block;
+                                position: relative;
+                                top: 4px;
+                                left: 6px;
+                            }
+                            &:last-child {
+                                font-size: 18px;
+                                color: #362f2d;
+                                font-family: 'svnhelvesbold';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
 .g-topic {
@@ -594,6 +663,40 @@
         .panel-body {
             background-color: #fff;
             border-radius: 0 5px 5px 0;
+        }
+    }
+}
+.g-similar-threads {
+    .g-slider {
+        ul {
+            text-align: center;
+            li{
+                display: inline-block;
+                width: calc(25% - 4px);
+                background-color: #fff;
+                text-align: left;
+                border-radius: 7px;
+                >p {
+                    img {
+                        width: 100%;
+                    }
+                }
+                div {
+                    padding-left: 10px;
+                    span {
+                        color: #3258af;
+                        font-size: 15px;
+                        font-family: 'svnhelvesbold';
+                        margin-bottom: 4px;
+                        display: block;
+                    }
+                    p {
+                        font-size: 15px;
+                        color: #362f2d;
+                        font-family: 'myriadprore';
+                    }
+                }
+            }
         }
     }
 }

@@ -12,6 +12,7 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
 
 <div class="row">
+
 	<div class="topic g-topic <!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
 		<div class="topic-header">
 			<h1 component="post/header" class="" itemprop="name">
@@ -78,6 +79,43 @@
 			{{{end}}}
 		</ul>
 
+		<div class="g-similar-threads">
+			<p class="g-title">Bạn hôm nay thế nào?</p>
+			<div class="g-slider">
+				<ul>
+					<li>
+						<p><img src="/assets/images/customer/banner5.jpg" alt=""></p>
+						<div>
+							<span>Juby Lee</span>
+							<p>Sự kiện Samsung Galaxy Unpacked được tiết lộ sẽ diễn ra vào ngày 11/08 sắp tới, và những sản phẩm có thể sẽ được ra mắt trong sự kiện đó bao mẫu...</p>
+						</div>
+					</li>
+					<li>
+						<p><img src="/assets/images/customer/banner6.jpg" alt=""></p>
+						<div>
+							<span>Juby Lee</span>
+							<p>Sự kiện Samsung Galaxy Unpacked được tiết lộ sẽ diễn ra vào ngày 11/08 sắp tới, và những sản phẩm có thể sẽ được ra mắt trong sự kiện đó bao mẫu...</p>
+						</div>
+					</li>
+					<li>
+						<p><img src="/assets/images/customer/banner6.jpg" alt=""></p>
+						<div>
+							<span>Juby Lee</span>
+							<p>Sự kiện Samsung Galaxy Unpacked được tiết lộ sẽ diễn ra vào ngày 11/08 sắp tới, và những sản phẩm có thể sẽ được ra mắt trong sự kiện đó bao mẫu...</p>
+						</div>
+					</li>
+
+					<li>
+						<p><img src="/assets/images/customer/banner5.jpg" alt=""></p>
+						<div>
+							<span>Juby Lee</span>
+							<p>Sự kiện Samsung Galaxy Unpacked được tiết lộ sẽ diễn ra vào ngày 11/08 sắp tới, và những sản phẩm có thể sẽ được ra mắt trong sự kiện đó bao mẫu...</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
 		<!-- IF config.enableQuickReply -->
 		<!-- IMPORT partials/topic/quickreply.tpl -->
 		<!-- ENDIF config.enableQuickReply -->
@@ -87,6 +125,8 @@
 		<!-- ENDIF config.usePagination -->
 
 		<!-- IMPORT partials/topic/navigator.tpl -->
+
+
 	</div>
 	<div data-widget-area="sidebar" class="col-lg-3 col-sm-12 <!-- IF !widgets.sidebar.length -->hidden<!-- ENDIF !widgets.sidebar.length -->">
 		{{{each widgets.sidebar}}}
@@ -95,8 +135,8 @@
 		<div class="g-question">
 			<p class="g-title">Bạn hôm nay thế nào?</p>
 			<div class="g-qu-content">
-				<a href="/user/huuluan1988">
-					<img class="avatar  avatar-sm2x avatar-rounded" alt="huuluan1988" title="" data-uid="1" loading="lazy" component="user/picture" src="/assets/uploads/profile/1-profileavatar-1626083308586.png" style="" data-original-title="huuluan1988">
+				<a href="#">
+					<img class="avatar  avatar-sm2x avatar-rounded" alt="" title="" data-uid="1" loading="lazy" component="user/picture" src="/assets/images/customer/avata.png"  data-original-title="huuluan1988">
 					<span>Hi trungle1979!</span>
 				</a>
 				<div>
@@ -112,7 +152,7 @@
 				<div class="" component="groups/summary" data-slug="cộng-đồng-game-aoe2">
 					<div class="panel panel-default">
 						<a href="/groups/cộng-đồng-game-aoe2" class="panel-heading list-cover">
-							<img src="/assets/uploads/files/groupcoverthumb-cộng-đồng-game-aoe2.png " alt="">
+							<img src="/assets/images/customer/banner1.jpg" alt="">
 						</a>
 						<div class="panel-body">
 							<h3 class="panel-title">Cộng Đồng Game AoE2 <small>2</small></h3>
@@ -127,24 +167,105 @@
 				<div class="" component="groups/summary" data-slug="administrators">
 					<div class="panel panel-default">
 						<a href="/groups/administrators" class="panel-heading list-cover">
-							<img src="/assets/uploads/files/groupcoverthumb-administrators.jpeg " alt="">
+							<img src="/assets/images/customer/banner2.jpg" alt="">
 						</a>
 						<div class="panel-body">
 							<h3 class="panel-title">administrators <small>1</small></h3>
 							<ul class="members">
-								
-								
 							</ul>
 						</div>
 					</div>
 				</div>
-				
+				<div class="" component="groups/summary" data-slug="administrators">
+					<div class="panel panel-default">
+						<a href="/groups/administrators" class="panel-heading list-cover">
+							<img src="/assets/images/customer/banner3.jpg" alt="">
+						</a>
+						<div class="panel-body">
+							<h3 class="panel-title">administrators <small>1</small></h3>
+							<ul class="members">
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="" component="groups/summary" data-slug="administrators">
+					<div class="panel panel-default">
+						<a href="/groups/administrators" class="panel-heading list-cover">
+							<img src="/assets/images/customer/banner4.jpg" alt="">
+						</a>
+						<div class="panel-body">
+							<h3 class="panel-title">administrators <small>1</small></h3>
+							<ul class="members">
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+
 		<div class="g-bxh">
 			<p class="g-title">BXH game Việt</p>
 			<div class="g-block-bxh"></div>
 		</div>
+
+		<div class="g-users-hot">
+			<p class="g-title">Thành viên nổi bật</p>
+			<div class="g-users">
+				<ul>
+					<li>
+						<a href="javascript:;">
+							<p><img src="/assets/images/customer/avata.png" alt=""></p>
+							<div>
+								<p><span>+146</span><i></i></p>
+								<p>Lorem Ipsum</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<p><img src="/assets/images/customer/avata.png" alt=""></p>
+							<div>
+								<p><span>+146</span><i></i></p>
+								<p>Lorem Ipsum</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<p><img src="/assets/images/customer/avata.png" alt=""></p>
+							<div>
+								<p><span>+146</span><i></i></p>
+								<p>Lorem Ipsum</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<p><img src="/assets/images/customer/avata.png" alt=""></p>
+							<div>
+								<p><span>+146</span><i></i></p>
+								<p>Lorem Ipsum</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<p><img src="/assets/images/customer/avata.png" alt=""></p>
+							<div>
+								<p><span>+146</span><i></i></p>
+								<p>Lorem Ipsum</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<div class="g-ad-bv">
+			<p><img src="/assets/images/customer/quangcao-bv.jpg" alt=""></p>
+		</div>
+
 	</div>
 </div>
 
