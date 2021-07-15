@@ -4,10 +4,18 @@
 	{{{end}}}
 </div>
 <div class="row">
-	<div class="topic <!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
+	<div class="g-ad-lg">
+		<a href="javascript:;"><img src="/assets/images/customer/quangcao-lg.jpg" alt=""></a>
+	</div>
+</div>
+
+<!-- IMPORT partials/breadcrumbs.tpl -->
+
+<div class="row">
+	<div class="topic g-topic <!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
 		<div class="topic-header">
 			<h1 component="post/header" class="" itemprop="name">
-				<span class="topic-title" component="topic/title">
+				<span class="topic-title g-topic-title" component="topic/title">
 					<span component="topic/labels">
 						<i component="topic/pinned" class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->" title="{{{ if !pinExpiry }}}[[topic:pinned]]{{{ else }}}[[topic:pinned-with-expiry, {pinExpiryISO}]]{{{ end }}}"></i>
 						<i component="topic/locked" class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->" title="[[topic:locked]]"></i>
@@ -18,7 +26,7 @@
 				</span>
 			</h1>
 
-			<div class="topic-info clearfix">
+			<div class="topic-info clearfix" style="display: none;">
 				<div class="category-item inline-block">
 					{{{ if category.icon }}}
 					<div role="presentation" class="icon pull-left" style="{{{ if category.bgColor }}}background-color: {category.bgColor};{{{end}}}; {{{ if category.color}}}color: {category.color};{{{end}}}">
@@ -57,7 +65,7 @@
 
 		<!-- IMPORT partials/topic/deleted-message.tpl -->
 
-		<ul component="topic" class="posts" data-tid="{tid}" data-cid="{cid}">
+		<ul component="topic" class="posts g-posts" data-tid="{tid}" data-cid="{cid}">
 			{{{each posts}}}
 				<li component="post" class="{{{ if posts.deleted }}}deleted{{{ end }}} {{{ if posts.selfPost }}}self-post{{{ end }}} {{{ if posts.topicOwnerPost }}}topic-owner-post{{{ end }}}" <!-- IMPORT partials/data/topic.tpl -->>
 					<a component="post/anchor" data-index="{posts.index}" id="{posts.index}"></a>

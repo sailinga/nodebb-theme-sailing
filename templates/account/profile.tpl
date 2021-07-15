@@ -177,8 +177,6 @@
 
 			<!-- IF !isSelf -->
 			<div class="g-three-bnt row" component="account/cover">
-				<!-- <a href="javascript:;">Gửi tin nhắn</a>
-				<a href="javascript:;">Theo dõi</a> -->
 				<ul data-uid="{uid}">
 					<li class="<!-- IF !hasPrivateChat -->hidden<!-- ENDIF !hasPrivateChat -->">
 						<a component="account/chat" href="#">Gửi tin nhắn</a>
@@ -190,7 +188,6 @@
 						<a component="account/flag" href="#">Báo Cáo</a>
 					</li>
 				</ul>
-				<!-- <a href="javascript:;">Báo cáo</a> -->
 			</div>
 			<!-- ENDIF !isSelf -->
 			

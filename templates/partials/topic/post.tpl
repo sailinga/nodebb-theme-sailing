@@ -5,11 +5,13 @@
 			<i component="user/status" class="fa fa-circle status {posts.user.status}" title="[[global:{posts.user.status}]]"></i>
 		</a>
 	</div>
-
-	<small class="pull-left">
-		<strong>
+	
+	<small class="pull-left g-stats">
+		<strong  component="account/cover">
 			<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.displayname}</a>
 		</strong>
+
+		<!-- IMPORT partials/topic/stats.tpl -->
 
 		<!-- IMPORT partials/topic/badge.tpl -->
 
@@ -32,7 +34,10 @@
 			</span>
 		</span>
 
+		
+
 	</small>
+	
 	<small class="pull-right">
 		<span class="bookmarked"><i class="fa fa-bookmark-o"></i></span>
 	</small>
@@ -46,7 +51,7 @@
 		</span>
 	</small>
 </div>
-
+<div class="clearfix"></div>
 <br />
 
 <div class="content g-content-news" component="post/content" itemprop="text">
